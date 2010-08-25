@@ -1,0 +1,1590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>Impel HTML 5 Javascript ORM - Criteria</title>
+
+        <link rel="stylesheet" type="text/css" href="/css/impel-unyui.css" />
+        <link rel="stylesheet" type="text/css" href="/css/sh/shCore.css" />
+        <link rel="stylesheet" type="text/css" href="/css/sh/shThemeDjango.css" />
+        <script type="text/javascript" src="/js/sh/shCore.js"></script>
+        <script type="text/javascript" src="/js/sh/shBrushJScript.js"></script>
+        <script type="text/javascript" src="/js/sh/shBrushJScript.js"></script>
+        <script type="text/javascript">SyntaxHighlighter.defaults["toolbar"]=true; SyntaxHighlighter.defaults["tab-size"]=2; SyntaxHighlighter.all();</script>
+
+	</head>
+
+	<body>
+	    <div id="wrapper">
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><a href="../symbols/CritConstants.html">CritConstants</a></li>
+	
+	<li><a href="../symbols/Criteria.html">Criteria</a></li>
+	
+	<li><a href="../symbols/Criterion.html">Criterion</a></li>
+	
+	<li><a href="../symbols/Impel.html">Impel</a></li>
+	
+	<li><a href="../symbols/ImpelClass.html">ImpelClass</a></li>
+	
+	<li><a href="../symbols/ImpelPeer.html">ImpelPeer</a></li>
+	
+	<li><a href="../symbols/ResultSet.html">ResultSet</a></li>
+	
+	<li><a href="../symbols/String.html">String</a></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class Criteria
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+			
+				Criteria
+				
+				
+					<br /><i>Defined in: </i> <a href="../symbols/src/impel-source.js.html">impel-source.js</a>.
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class Criteria.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/Criteria.html">Criteria</a></b>(<span class="param">options</span>, <span class="param">events</span>)
+							</div>
+							<div class="description">A utility class for holding criteria information for an SQL query.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class Criteria.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#add">add</a></b>(<span class="param">peer_columnOrCrit</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+								</div>
+								<div class="description">Add a Criterion to this Criteria object.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addAnd">addAnd</a></b>(<span class="param">peer_columnOrCrit</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+								</div>
+								<div class="description">Add a Criterion to this Criteria object.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addAscendingOrderByColumn">addAscendingOrderByColumn</a></b>(<span class="param">peer_column</span>)
+								</div>
+								<div class="description">Sort the results of any SQL query constructed from this Criteria by the column specified in ascending order</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addCriterion">addCriterion</a></b>(<span class="param">crit</span>, <span class="param">conjunction</span>)
+								</div>
+								<div class="description">Add a Criterion to this Criteria object.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addDescendingOrderByColumn">addDescendingOrderByColumn</a></b>(<span class="param">peer_column</span>)
+								</div>
+								<div class="description">Sort the results of any SQL query constructed from this Criteria by the column specified in descending order</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addGroupByColumn">addGroupByColumn</a></b>(<span class="param">peer_column</span>)
+								</div>
+								<div class="description">Group the results of any SQL query constructed from this Criteria by the column specified</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addJoin">addJoin</a></b>(<span class="param">left</span>, <span class="param">right</span>, <span class="param">operator</span>)
+								</div>
+								<div class="description">Add a JOIN clause to this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addOr">addOr</a></b>(<span class="param">peer_columnOrCrit</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+								</div>
+								<div class="description">Add a Criterion to this Criteria object.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addSelectColumn">addSelectColumn</a></b>(<span class="param">peer_column</span>)
+								</div>
+								<div class="description">Add a column to the SELECT clause of the SQL statement that will be executed against the database.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#addTable">addTable</a></b>(<span class="param">table</span>)
+								</div>
+								<div class="description">Add a table to the list of tables that will be used in any SQL statement constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getDeleteSQL">getDeleteSQL</a></b>()
+								</div>
+								<div class="description">Retrieve a complete SQL DELETE statement constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getInsertSQL">getInsertSQL</a></b>()
+								</div>
+								<div class="description">Retrieve a complete SQL Insert statement constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getLeftJoinClauses">getLeftJoinClauses</a></b>()
+								</div>
+								<div class="description">Retrieve an Object representing the LEFT JOIN clauses that have been added to this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getNewCriterion">getNewCriterion</a></b>(<span class="param">peer_column</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+								</div>
+								<div class="description">Retrieve a new Criterion object that is not automatically added to this Criteria object.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getSelectColumns">getSelectColumns</a></b>()
+								</div>
+								<div class="description">Retrieve a list of columns that will be used to make up the SELECT</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getSelectModifiers">getSelectModifiers</a></b>()
+								</div>
+								<div class="description">Retrieve any modifiers that have been added to the SELECT clause of the Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getSelectSQL">getSelectSQL</a></b>()
+								</div>
+								<div class="description">Retrieve a complete SQL SELECT statment constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getTableNames">getTableNames</a></b>()
+								</div>
+								<div class="description">Retrive a list of all the tables that will be used in any SQL statement constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getUpdateSQL">getUpdateSQL</a></b>(<span class="param">constrainCrit</span>)
+								</div>
+								<div class="description">Retrieve a complet SQL Update statement constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getValues">getValues</a></b>()
+								</div>
+								<div class="description">Retrieve all values that have been added to this Criteria in the order they were added.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#getWhereClause">getWhereClause</a></b>()
+								</div>
+								<div class="description">Retrieve only the WHERE clauses portion of an SQL statement constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#hasSelectColumns">hasSelectColumns</a></b>()
+								</div>
+								<div class="description">Does this Criteria contain any columns that will be used in the SELECT clause of an SQL statment?</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#leftJoinDbug">leftJoinDbug</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#leftJoinsHas">leftJoinsHas</a></b>(<span class="param">peer_column</span>)
+								</div>
+								<div class="description">Does this Criteria contain a LEFT JOIN clause for the given peer_column.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#setDistinct">setDistinct</a></b>()
+								</div>
+								<div class="description">Add the DISTINCT modifier to the SELECT clause of any SQL statement constructed from this Criteria.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Criteria.html#setLimit">setLimit</a></b>(<span class="param">limit</span>)
+								</div>
+								<div class="description">Set a limit on the number of results.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>Criteria</b>(<span class="param">options</span>, <span class="param">events</span>)
+				</div>
+				
+				<div class="description">
+					A utility class for holding criteria information for an SQL query.
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								<span class="light fixedFont">{Object}</span>  <b>options</b>
+								
+							</dt>
+								<dd>Options to bind to this Criteria object. Currently no configurable Options are supported by this class.</dd>
+						
+							<dt>
+								<span class="light fixedFont">{Object}</span>  <b>events</b>
+								
+							</dt>
+								<dd>Events to bind to to this Criteria object. Currently no Events are fired by this class</dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="add"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>add</b>(<span class="param">peer_columnOrCrit</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+					
+					</div>
+					<div class="description">
+						Add a Criterion to this Criteria object.
+<p><strong>Potential Issue:</strong> does add allow the same column to be added more than once?</p>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criterion.html">Criterion</a>|<a href="../symbols/String.html">String</a>}</span> <b>peer_columnOrCrit</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>value</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>comparison</b>
+									<i>Optional, Default: CritConstants.EQUAL</i>
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criterion.html">Criterion</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="addAnd"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addAnd</b>(<span class="param">peer_columnOrCrit</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+					
+					</div>
+					<div class="description">
+						Add a Criterion to this Criteria object.
+If this Criteria contains other Criterion the Criterion will be added with an 'AND' conjunction
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criterion.html">Criterion</a>|<a href="../symbols/String.html">String</a>}</span> <b>peer_columnOrCrit</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>value</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>comparison</b>
+									<i>Optional, Default: CritConstants.EQUAL</i>
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#add">Criteria#add</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="addAscendingOrderByColumn"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addAscendingOrderByColumn</b>(<span class="param">peer_column</span>)
+					
+					</div>
+					<div class="description">
+						Sort the results of any SQL query constructed from this Criteria by the column specified in ascending order
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code brush: js;">var c = new Criteria();
+    c.addAscendingOrderByColumn("PlayePeer::zipcode");</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>peer_column</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#addDescendingOrderByColumn">Criteria#addDescendingOrderByColumn</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="addCriterion"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addCriterion</b>(<span class="param">crit</span>, <span class="param">conjunction</span>)
+					
+					</div>
+					<div class="description">
+						Add a Criterion to this Criteria object. If this Criteria contains other Criterion the Criterion will be added with the passed in conjunction
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criterion.html">Criterion</a>}</span> <b>crit</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>conjunction</b>
+									<i>Optional, Default: CritConstants.AND</i>
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criterion.html">Criterion</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="addDescendingOrderByColumn"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addDescendingOrderByColumn</b>(<span class="param">peer_column</span>)
+					
+					</div>
+					<div class="description">
+						Sort the results of any SQL query constructed from this Criteria by the column specified in descending order
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code brush: js;">var c = new Criteria();
+    c.addDescendingOrderByColumn("PlayerPeer::zipcode");</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>peer_column</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#addAscendingOrderByColumn">Criteria#addAscendingOrderByColumn</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="addGroupByColumn"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addGroupByColumn</b>(<span class="param">peer_column</span>)
+					
+					</div>
+					<div class="description">
+						Group the results of any SQL query constructed from this Criteria by the column specified
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>peer_column</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="addJoin"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addJoin</b>(<span class="param">left</span>, <span class="param">right</span>, <span class="param">operator</span>)
+					
+					</div>
+					<div class="description">
+						Add a JOIN clause to this Criteria.
+<p>Currently only JOIN and LEFT JOIN are supported join opperators.</p>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>left</b>
+									
+								</dt>
+								<dd>The peer_column (table) that is the left side of the JOIN, e.g., "PlayerPeer::card_table_id"</dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>right</b>
+									
+								</dt>
+								<dd>The peer_column (table) that is the right side of the JOIN, e.g., "CardTablePeer::id"</dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>operator</b>
+									<i>Optional, Default: CritConstants.JOIN</i>
+								</dt>
+								<dd>The type of JOIN, e.g., CritConstants.LEFT_JOIN</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="addOr"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addOr</b>(<span class="param">peer_columnOrCrit</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+					
+					</div>
+					<div class="description">
+						Add a Criterion to this Criteria object.
+If this Criteria contains other Criterion the Criterion will be added with an 'OR' conjunction
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criterion.html">Criterion</a>|<a href="../symbols/String.html">String</a>}</span> <b>peer_columnOrCrit</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>value</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>comparison</b>
+									<i>Optional, Default: CritConstants.EQUAL</i>
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="addSelectColumn"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addSelectColumn</b>(<span class="param">peer_column</span>)
+					
+					</div>
+					<div class="description">
+						Add a column to the SELECT clause of the SQL statement that will be executed against the database.
+<p>The ImpelPeer.doSelect, etc., methods automatically add the necessary columns to the SELECT clause,
+so this method does not need to be called manually. If you do call it then only columns that have
+associated attributes in the ImpelClass object will be hydrated. To get at the column you will need
+to pass the Criteria to the ImpelPeer.executeSQL method then access the SQLResultSet that it passes
+off to your success callback.</p>
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code brush: js;">var c = new Criteria();
+    c.add("PlayerPeer::debt",50000,CritConstants.GREATER_EQUAL);
+    c.addSelectColumn.("PlayerPeer::name");
+    c.addSelectColumn.("PlayerPeer::address");
+    PlayerPeer.executeSQL(c.getSelectSQL,c.getValues(),function(rs){
+                        new ResultSet(rs).toArray().each(function(row){
+                          notify.show("Lenny go collect from "+ row[0] +". He lives at "+ row[1]);
+                        });
+                      })</pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>peer_column</b>
+									
+								</dt>
+								<dd>The Peer::column to add.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#getSelectColumns">Criteria#getSelectColumns</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="addTable"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addTable</b>(<span class="param">table</span>)
+					
+					</div>
+					<div class="description">
+						Add a table to the list of tables that will be used in any SQL statement constructed from this Criteria.
+The ImpelPeer.doSelectOne, etc., methods automatically add the necessary tables, so this method really shouldn't be
+called outside of the ImpelPeer methods.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>table</b>
+									
+								</dt>
+								<dd>The name of the table to add</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDeleteSQL"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getDeleteSQL</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve a complete SQL DELETE statement constructed from this Criteria.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> An SQL DELETE statement</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/ImpelClass.html#remove">ImpelClass#remove</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getInsertSQL"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getInsertSQL</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve a complete SQL Insert statement constructed from this Criteria.
+<p>The columns, values, and table names, will be automatically added to the statement before it is returned</p>
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code brush: js;">  var c = new Criteria();
+      c.add("PlayerPeer::name","Johnny Big");
+      c.add("PlayerPeer::debt",0);
+      c.add("PlayerPeer::card_table_id",7);
+
+  PlayerPeer.executeSQL(c.getInsertSQL(),c.getValues(),$empty,
+                        function(e){
+                          notify.error("Failed to add Jonny to DB:",e);
+                        });</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> An SQL INSERT statement</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/ImpelClass.html#save">ImpelClass#save</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getLeftJoinClauses"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Object}</span>
+					<b>getLeftJoinClauses</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve an Object representing the LEFT JOIN clauses that have been added to this Criteria.
+<pre>
+The left_joins DataStructure looks like this:
+{ right_table_name : { 'ON' : " ON left_column = right_column", 'left' : left_table_name } }
+</pre>
+
+<p>We go through the each top level item of the Object; pull out the left table_table_name then look for any other entires that use it as their right_table_name.
+If we find any we add ourselves to the end of their ON clause and erase our entry. Then we go through the Object one more time constructing queries to look like
+left_table_name LEFT JOIN right_table_name ON left_colum = right_column LEFT JOIN another_right_table_name ON ..., left_table_name LEFT JOIN right_table_name ON left_colum = right_column.</p>
+
+<p>The current implementation probably has a bug in that more than two nested LEFT JOINs using the same table won't come out correct. This will be fixed before we go to beta.</p>
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Object}</span> </dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#addJoin">Criteria#addJoin</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getNewCriterion"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getNewCriterion</b>(<span class="param">peer_column</span>, <span class="param">value</span>, <span class="param">comparison</span>)
+					
+					</div>
+					<div class="description">
+						Retrieve a new Criterion object that is not automatically added to this Criteria object. The returned Criterion can be used to chain other Criterions and create a more complex WHERE clause.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>peer_column</b>
+									
+								</dt>
+								<dd>The peer and column that the reutrned Criterion should be associated with, e.g., "CardPeer::name"</dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>value</b>
+									
+								</dt>
+								<dd>The value that the peer_column should be associated with, e.g., "Ace of Clubs"</dd>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>comparison</b>
+									
+								</dt>
+								<dd>The relationship between the value and the peer_column, e.g., "CritConstants.EQUAL"</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSelectColumns"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Array}</span>
+					<b>getSelectColumns</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve a list of columns that will be used to make up the SELECT
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Array}</span> The columns</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#addSelectColumn">Criteria#addSelectColumn</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getSelectModifiers"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getSelectModifiers</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve any modifiers that have been added to the SELECT clause of the Criteria.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> "DISTINCT" || '';</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#setDistinct">Criteria#setDistinct</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getSelectSQL"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getSelectSQL</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve a complete SQL SELECT statment constructed from this Criteria.
+<p>The select columns, table names, joins, and where clauses will be automatically added to the statement before it is returned</p>
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> an SQL SELECT statement</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/ImpelPeer.html#doSelect">ImpelPeer#doSelect</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getTableNames"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getTableNames</b>()
+					
+					</div>
+					<div class="description">
+						Retrive a list of all the tables that will be used in any SQL statement constructed from this Criteria.
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code brush: js;">var c = new Criteria();
+    c.add("PlayerPeer::name","Johnny Small");
+    c.add("CardTablePeer::number",7);
+
+var tables = c.getTableNames();
+
+tables now equals "player,cardtable"</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> A list of the tables separated by commas</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#addTable">Criteria#addTable</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getUpdateSQL"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getUpdateSQL</b>(<span class="param">constrainCrit</span>)
+					
+					</div>
+					<div class="description">
+						Retrieve a complet SQL Update statement constructed from this Criteria.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>constrainCrit</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> An SQL UPDATE statement</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/ImpelClass.html#save">ImpelClass#save</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getValues"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Array}</span>
+					<b>getValues</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve all values that have been added to this Criteria in the order they were added.
+<p>The getInsertSQL, etc., methods construct the SQL statemetn with '?' in place of values. ImpelPeer.executeSQL 
+expects this and so requires an array of variables as the second argument. It will then prepare the values before
+executing the full SQL statement.</p>
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Array}</span> The values associated with this Criteria in the order they were added.</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/ImpelPeer.html#executeSQL">ImpelPeer#executeSQL</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="getWhereClause"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getWhereClause</b>()
+					
+					</div>
+					<div class="description">
+						Retrieve only the WHERE clauses portion of an SQL statement constructed from this Criteria.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> The WHERE clause for this Criteria.</dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#getSelectSQL">Criteria#getSelectSQL</a></dd>
+							
+								<dd><a href="../symbols/Criteria.html#getUpdateSQL">Criteria#getUpdateSQL</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="hasSelectColumns"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>hasSelectColumns</b>()
+					
+					</div>
+					<div class="description">
+						Does this Criteria contain any columns that will be used in the SELECT clause of an SQL statment?
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> </dd>
+							
+							</dl>
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/Criteria.html#addSelectColumn">Criteria#addSelectColumn</a></dd>
+							
+								<dd><a href="../symbols/Criteria.html#getSelectColumns">Criteria#getSelectColumns</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="leftJoinDbug"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>leftJoinDbug</b>()
+					
+					</div>
+					<div class="description">
+						
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="leftJoinsHas"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Boolean}</span>
+					<b>leftJoinsHas</b>(<span class="param">peer_column</span>)
+					
+					</div>
+					<div class="description">
+						Does this Criteria contain a LEFT JOIN clause for the given peer_column.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>peer_column</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Boolean}</span> </dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setDistinct"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setDistinct</b>()
+					
+					</div>
+					<div class="description">
+						Add the DISTINCT modifier to the SELECT clause of any SQL statement constructed from this Criteria.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLimit"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLimit</b>(<span class="param">limit</span>)
+					
+					</div>
+					<div class="description">
+						Set a limit on the number of results.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>limit</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+            <div class="push">&nbsp;</div>
+         </div> <!-- end of wrapper -->
+         <div id="footer"
+        	<div class="fineprint" style="clear:both">
+        	    <a class="logo" href="http://www.simulacre.org/"> </a>
+        	</div>
+    	</div>
+    	<script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-1727701-7");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
+	</body>
+</html>

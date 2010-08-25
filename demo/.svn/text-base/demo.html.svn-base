@@ -1,0 +1,189 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   
+  <title>SQL Storage Between Pages</title>
+  
+  <script type="text/javascript" src="mootools-1.2.1-core.js"></script>
+  <script type="text/javascript" src="mootools-1.2-more.js"></script>
+  <script type="text/javascript" src="clientcide.js"></script>    
+  <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="impel.js"></script>
+  <script type="text/javascript" src="model.js"></script>
+  <script type="text/javascript" src="UnitTestChain.js"></script>
+  <script type="text/javascript" src="unitTests.js"></script>  
+  
+  
+  <script type="text/javascript">
+    var requestParams = null;
+    
+    dbug.time("initialization");
+    
+    var reflectionTest = function(){
+      dbug.log("my name is: "+this.name);
+    }
+    
+    function getRequestParameters(){
+          dbug.time("getRequestParameters()");
+          var params  = new Hash({});
+          var qs  = window.location['search'];
+              if(qs.length == 0)
+                return params;
+              qs = qs.substring(1,params.length);
+              qs.split('&').each(function(kv){
+                var parts = kv.split('=');
+                params.set(parts[0],decodeURIComponent(parts[1]));
+              });
+          dbug.timeEnd("getRequestParameters()");
+          return params;
+    }
+    
+    function display(msg){
+      $('debug').set('html',msg+"\n"+$('debug').get('html'));
+    }
+    
+    var storage = new offlineMirror({},{
+        'dataReady' : function(){ display("synchronizing storage..."); display("This can take up to 2 minutes, so please be patient.");  storage.synchronize(); },
+        'synchronized' : function(){ display("synchronization is complete"); dbug.log('synchronized!')},
+        'synchronizationFailed': function(failures){ display("synchronization failed"); display(failures); dbug.log('failed synchronization'); dbug.log(failures); },
+        'synchronizing': function(table){dbug.log("synchronizing "+table+" with the server"); },
+        'updated': function(table,oldV,newV){ dbug.log("table "+ table + " (v"+oldV+") updated to v"+newV); }
+    });
+    
+
+var saveRMeNotNewUnitTest = function(chain){
+        var card            = new Card();
+        var cardScoreA      = new CardScore();
+        var cardScoreB     = new CardScore();
+        
+        cardScoreA.setCorrect(10);
+        cardScoreB.setCorrect(12);
+        cardScoreA.setModule('dev');
+        cardScoreA.setAction('rSave');
+        cardScoreB.setModule('dev');
+        cardScoreB.setAction('rSave');
+        
+        
+        card.setKanji("biiiatch");
+        card.addCardScore(cardScoreA);
+        
+        card.save(function(){
+            cardScoreB.save(
+                function(){
+                    dbug.log("cardScoreB ("+cardScoreB.getId()+") was saved");
+                    card.addCardScore(cardScoreB);
+                    card.save(function(){ chain.success('saveRMeNotNewUnitTest'); },function(){ chain.failure('saveRMeNotNewUnitTest'); });
+                }, 
+                function(){
+                dbug.log("couldn't save cardScoreB");
+                }
+            );                
+        }, function(){ dbug.log("unable to save card"); chain.failure('saveRMeNotNewUnitTest'); });
+}
+    
+var saveRMeNewUnitTest = function(chain){
+        var card            = new Card();
+        var cardScoreA      = new CardScore();
+        var cardScoreB     = new CardScore();
+        
+        cardScoreA.setCorrect(10);
+        cardScoreB.setCorrect(12);
+        cardScoreA.setModule('dev');
+        cardScoreA.setAction('rSave');
+        cardScoreB.setModule('dev');
+        cardScoreB.setAction('rSave');
+        
+        
+        card.setKanji("biiiatch");
+        card.addCardScore(cardScoreA);
+    
+        cardScoreB.save(
+            function(){
+                dbug.log("cardScoreB ("+cardScoreB.getId()+") was saved");
+                card.addCardScore(cardScoreB);
+                card.save(function(){ chain.success('saveRMeNotNewUnitTest'); },function(){ chain.failure('saveRMeNotNewUnitTest'); });
+            }, 
+            function(){
+                dbug.log("couldn't save cardScoreB");
+                chain.failure('saveRMeNotNewUnitTest');
+            }
+        );                
+}
+
+
+var mmSaveMeNotNewUnitTest = function(chain){
+    var card        = new Card();
+        card.setKanji('im');
+    var cardB       = new Card();
+        cardB.setKanji('pel');
+        
+    var compound    = new Compound();
+        compound.setKanji('impel');
+        
+    var compoundB   = new Compound();
+        compoundB.setKanji('propel');
+        
+        card.addCompound(compound);
+    
+    card.save();
+    cardB.addCompound(compound);
+    cardB.addCompound(compoundB);
+    
+    cardB.save(function(){ card.save(function(){ chain.success('mmSaveUnitTest');},function(){chain.failure('mmSaveUnitTest');}); });
+}
+
+var mmSaveAllNewUnitTest = function(chain){
+    var card        = new Card();
+        card.setKanji('im');
+    var cardB       = new Card();
+        cardB.setKanji('pel');
+        
+    var compound    = new Compound();
+        compound.setKanji('impel');
+        
+    var compoundB   = new Compound();
+        compoundB.setKanji('propel');
+        
+    card.addCompound(compound);
+    cardB.addCompound(compound);
+    cardB.addCompound(compoundB);
+    
+    card.save(function(){ chain.success('mmSaveUnitTest');},function(){chain.failure('mmSaveUnitTest');});
+}
+
+    window.addEvent('domready',function(){
+        storage.addEvent('synchronized', function(){
+            requestParams = getRequestParameters();
+            dbug.log("requestParams: ",requestParams);
+            Impel.db = storage.db;
+            
+            //unitTests = new AsyncUnitTestChain(addSameColumnUnitTest, findCardsByKanjiTestUnit, findCardsByStackTestUnit, saveTestUnit, updateTestUnit, findCardsByLevelTestUnit, findCompoundsByLevelTestUnit, nothingSpecialTestUnit, doSelectCardJoinStackThroughCardStackUnitTest, doSelectJoinAllUnitTest, retrieveByPkIdJoinAllUnitTest,retrieveByPkIdUnitTest,doSelectJoinAllUnitTest,doSelectOneJoinAllUnitTest, mmSave, nmSave, ,nothingSpecialTestUnit);
+            unitTests    = new AsyncUnitTestChain(limitTestUnit, addSameColumnUnitTest, findCardsByKanjiTestUnit, findCardsByStackTestUnit, saveTestUnit, updateTestUnit, findCardsByLevelTestUnit, findCompoundsByLevelTestUnit, doSelectCardJoinStackThroughCardStackUnitTest, doSelectJoinAllUnitTest, retrieveByPkIdJoinAllUnitTest,retrieveByPkIdUnitTest,doSelectJoinAllUnitTest,doSelectOneJoinAllUnitTest, mmSave, nmSave);
+                unitTests.addEvent('complete', function(){ dbug.log("Testing is complete."); unitTests.showResults(); });
+            unitTests.next();
+            
+        });
+    });
+
+  
+  </script>
+  
+ </head>
+ <body>
+   Check the DB Inspector and Console
+
+   <div style="height:300px; width:90%; overflow:auto; border:1px solid #ccc; background-color:black; padding:0.5em 1em;">
+     <pre id="debug" style="font-size:8pt; background-color:black; color:#ccc"></pre>
+   </div>
+
+   	<script type="text/javascript">
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+   </script>
+   <script type="text/javascript">
+   try {
+   var pageTracker = _gat._getTracker("UA-1727701-7");
+   pageTracker._trackPageview();
+   } catch(err) {}</script>
+ </body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>Impel HTML 5 Javascript ORM - String</title>
+
+        <link rel="stylesheet" type="text/css" href="/css/impel-unyui.css" />
+        <link rel="stylesheet" type="text/css" href="/css/sh/shCore.css" />
+        <link rel="stylesheet" type="text/css" href="/css/sh/shThemeDjango.css" />
+        <script type="text/javascript" src="/js/sh/shCore.js"></script>
+        <script type="text/javascript" src="/js/sh/shBrushJScript.js"></script>
+        <script type="text/javascript" src="/js/sh/shBrushJScript.js"></script>
+        <script type="text/javascript">SyntaxHighlighter.defaults["toolbar"]=true; SyntaxHighlighter.defaults["tab-size"]=2; SyntaxHighlighter.all();</script>
+
+	</head>
+
+	<body>
+	    <div id="wrapper">
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><a href="../symbols/CritConstants.html">CritConstants</a></li>
+	
+	<li><a href="../symbols/Criteria.html">Criteria</a></li>
+	
+	<li><a href="../symbols/Criterion.html">Criterion</a></li>
+	
+	<li><a href="../symbols/Impel.html">Impel</a></li>
+	
+	<li><a href="../symbols/ImpelClass.html">ImpelClass</a></li>
+	
+	<li><a href="../symbols/ImpelPeer.html">ImpelPeer</a></li>
+	
+	<li><a href="../symbols/ResultSet.html">ResultSet</a></li>
+	
+	<li><a href="../symbols/String.html">String</a></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Built-In Namespace String
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+			
+				
+				
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class String.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">String.<b><a href="../symbols/String.html#.prototype.lcfirst">prototype.lcfirst</a></b>()
+								</div>
+								<div class="description">Make the first character of this String lower case</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">String.<b><a href="../symbols/String.html#.prototype.parsePeerColumn">prototype.parsePeerColumn</a></b>()
+								</div>
+								<div class="description">Parse a Peer::column string into its constituent parts</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">String.<b><a href="../symbols/String.html#.prototype.ucfirst">prototype.ucfirst</a></b>()
+								</div>
+								<div class="description">Capitalize the first character of this String</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name=".prototype.lcfirst"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">String.</span><b>prototype.lcfirst</b>()
+					
+					</div>
+					<div class="description">
+						Make the first character of this String lower case
+						
+							<br />
+							<i>Defined in: </i> <a href="../symbols/src/impel-source.js.html">impel-source.js</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".prototype.parsePeerColumn"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Object}</span>
+					<span class="light">String.</span><b>prototype.parsePeerColumn</b>()
+					
+					</div>
+					<div class="description">
+						Parse a Peer::column string into its constituent parts
+						
+							<br />
+							<i>Defined in: </i> <a href="../symbols/src/impel-source.js.html">impel-source.js</a>.
+						
+						
+					</div>
+					
+					
+					
+					<pre class="code brush: js;"> "CardPeer::name".parsePeerColumn();
+
+ will return:
+   { peer          : a CardPeer object reference, 
+     peer_name     : "CardPeer", 
+     column        : "name", 
+     table_column  : "card.name", 
+     getter        : "getName", 
+     setter        : "setName", 
+     orig          : "CardPeer::name" }</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Object}</span> containing the name of the Peer class, associated table column, associated column, associated get method, associated set method, and the original string as well as a reference to the associated ImpelPeer object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".prototype.ucfirst"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">String.</span><b>prototype.ucfirst</b>()
+					
+					</div>
+					<div class="description">
+						Capitalize the first character of this String
+						
+							<br />
+							<i>Defined in: </i> <a href="../symbols/src/impel-source.js.html">impel-source.js</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+            <div class="push">&nbsp;</div>
+         </div> <!-- end of wrapper -->
+         <div id="footer"
+        	<div class="fineprint" style="clear:both">
+        	    <a class="logo" href="http://www.simulacre.org/"> </a>
+        	</div>
+    	</div>
+    	<script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-1727701-7");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
+	</body>
+</html>
