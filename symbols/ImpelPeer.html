@@ -1,0 +1,1693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+
+		<title>Impel HTML 5 Javascript ORM - ImpelPeer</title>
+
+        <link rel="stylesheet" type="text/css" href="../css/impel-unyui.css" />
+        <link rel="stylesheet" type="text/css" href="../css/sh/shCore.css" />
+        <link rel="stylesheet" type="text/css" href="../css/sh/shThemeDjango.css" />
+        <script type="text/javascript" src="../js/sh/shCore.js"></script>
+        <script type="text/javascript" src="../js/sh/shBrushJScript.js"></script>
+        <script type="text/javascript" src="../js/sh/shBrushJScript.js"></script>
+        <script type="text/javascript">SyntaxHighlighter.defaults["toolbar"]=true; SyntaxHighlighter.defaults["tab-size"]=2; SyntaxHighlighter.all();</script>
+
+	</head>
+
+	<body>
+	    <div id="wrapper">
+<!-- ============================== header ================================= -->
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+
+	<li><a href="../symbols/CritConstants.html">CritConstants</a></li>
+
+	<li><a href="../symbols/Criteria.html">Criteria</a></li>
+
+	<li><a href="../symbols/Criterion.html">Criterion</a></li>
+
+	<li><a href="../symbols/Impel.html">Impel</a></li>
+
+	<li><a href="../symbols/ImpelClass.html">ImpelClass</a></li>
+
+	<li><a href="../symbols/ImpelPeer.html">ImpelPeer</a></li>
+
+	<li><a href="../symbols/ResultSet.html">ResultSet</a></li>
+
+	<li><a href="../symbols/String.html">String</a></li>
+
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+
+				Class ImpelPeer
+			</h1>
+
+<!-- ============================== class summary ========================== -->
+			<p class="description">
+
+
+				ImpelPeer
+
+
+					<br /><i>Defined in: </i> <a href="../symbols/src/impel-source.js.html">impel-source.js</a>.
+
+			</p>
+
+<!-- ============================== constructor summary ==================== -->
+
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class ImpelPeer.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/ImpelPeer.html">ImpelPeer</a></b>(<span class="param">options</span>, <span class="param">events</span>)
+							</div>
+							<div class="description">A utility class for managing interactions between objects and their associated records in the database.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+<!-- ============================== properties summary ===================== -->
+
+
+<!-- ============================== methods summary ======================== -->
+
+
+
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class ImpelPeer.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#addSelectColumns">addSelectColumns</a></b>(<span class="param">crit</span>)
+								</div>
+								<div class="description">Add the select columns, that are necessary to hydrate the associated ImpelClass object from a database row, to a Criteria object</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#addTable">addTable</a></b>(<span class="param">crit</span>)
+								</div>
+								<div class="description">Add the table, in which this ImpelClass's data is stored in the database, to a Criteria object</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#doSelect">doSelect</a></b>(<span class="param">criteria</span>, <span class="param">callback(ImpelClass)</span>, <span class="param">con</span>)
+								</div>
+								<div class="description">Retrieve a set of rows from the database and attempt to hydrate instances of this ImpelPeer's associated ImpelClass with the results.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#doSelectJoinAll">doSelectJoinAll</a></b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">con</span>, <span class="param">except</span>)
+								</div>
+								<div class="description">Retrieve objets of the ImpelClass that are associated with this ImpelPeer, but also retieve all the other ImpelClass objects that
+are associated with each object for this ImpelPeer.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#doSelectJoinAllExcept">doSelectJoinAllExcept</a></b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">except</span>, <span class="param">con</span>)
+								</div>
+								<div class="description">Retrieve objets of the ImpelClass that are associated with this ImpelPeer, but also retieve all the other ImpelClass objects that
+are associated with each object for this ImpelPeer.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#doSelectOne">doSelectOne</a></b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">con</span>)
+								</div>
+								<div class="description">Retrieve a sing row from the database and attempt to hydrate an instance of this ImpelPeer's associated ImpelClass with the result.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#doSelectOneJoinAll">doSelectOneJoinAll</a></b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">con</span>, <span class="param">except</span>)
+								</div>
+								<div class="description">Retrieve a single object from the database, but include all of its associated objects.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#executeSQL">executeSQL</a></b>(<span class="param">stmt</span>, <span class="param">values</span>, <span class="param">s_callback(SQLResultSet)</span>, <span class="param">f_callback(Error)</span>, <span class="param">obj</span>, <span class="param">obj_method</span>, <span class="param">con</span>)
+								</div>
+								<div class="description">Execute an arbitrary SQL statement against the database.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#generateAttributes">generateAttributes</a></b>()
+								</div>
+								<div class="description">Dynamically build the attributes of the ImpelClass object associated with this ImpelPeer object based on the columns that were specified when instantiating this object.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#generateDocs">generateDocs</a></b>()
+								</div>
+								<div class="description">Generate a documentation page for this object detailing all of it's doSelectJoin* methods, which are automatically generated.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#generateMethods">generateMethods</a></b>()
+								</div>
+								<div class="description">Dynamically build the set/get methods of the ImpelClass object associated with this ImpelPeer object based on the columns that were specified when instantiating this object.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#getBaseObjName">getBaseObjName</a></b>()
+								</div>
+								<div class="description">Retrieve the name of the class associated with this peer object.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#getColumns">getColumns</a></b>(<span class="param">columns</span>)
+								</div>
+								<div class="description">Retrieve an internal object that defines the names of the attributes and columns for this ImpelPeer's associated ImpelClass.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#getSelectColumns">getSelectColumns</a></b>()
+								</div>
+								<div class="description">Retrieve a comma separated list of the columns that will be used to create an SQL SELECT statement for this ImpelPeer.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#getTableName">getTableName</a></b>()
+								</div>
+								<div class="description">Retrieve the name of the table that is associate with this ImpelPeer.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#hasMany">hasMany</a></b>(<span class="param">peer_column</span>)
+								</div>
+								<div class="description">Define an one-to-many relationship between this ImpelPeer and another.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#hasManyThrough">hasManyThrough</a></b>(<span class="param">peer_column</span>, <span class="param">through_peer_column</span>, <span class="param">through_peer_column_relation</span>)
+								</div>
+								<div class="description">Define a many-to-many relationship between this ImpelPeer and another via a third ImpelPeer.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#isDeleting">isDeleting</a></b>(<span class="param">id</span>)
+								</div>
+								<div class="description">Determine if Impel is currently deleting an ImpelClass with a specific id.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#retrieveByPkId">retrieveByPkId</a></b>(<span class="param">id</span>, <span class="param">callback(object)</span>, <span class="param">con</span>)
+								</div>
+								<div class="description">Retrieve a single object from the database based on its primary key (id).</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#retrieveByPkIdJoinAll">retrieveByPkIdJoinAll</a></b>(<span class="param">id</span>, <span class="param">callback(object)</span>, <span class="param">con</span>, <span class="param">except</span>)
+								</div>
+								<div class="description">Retrieve a single object from the database based on its primary key (id), but also retrieve its associated objects.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#setDeleted">setDeleted</a></b>(<span class="param">id</span>)
+								</div>
+								<div class="description">Record that an ImpelClass object has been deleted.</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/ImpelPeer.html#setDeleting">setDeleting</a></b>(<span class="param">id</span>)
+								</div>
+								<div class="description">Record that an ImpelClass object is being deleted.</div>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+
+
+
+<!-- ============================== events summary ======================== -->
+
+
+<!-- ============================== constructor details ==================== -->
+
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+
+				<div class="fixedFont">
+						<b>ImpelPeer</b>(<span class="param">options</span>, <span class="param">events</span>)
+				</div>
+
+				<div class="description">
+					A utility class for managing interactions between objects and their associated records in the database.
+<p>Any class of objects that you want to persist in the database must have an associated ImpelPeer object.</p>
+<p>An ImpelPeer object defines the names of the attributes for the ImpelClass object, its associated table
+   and columns in the database. It must also define the name of the ImpelClass object.</p>
+
+				</div>
+
+
+
+
+
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+
+							<dt>
+								<span class="light fixedFont">{Object}</span>  <b>options</b>
+
+							</dt>
+								<dd>Options to bind to this ImpelPeer object. Currently no configurable Options are supported by this class.</dd>
+
+							<dt>
+								<span class="light fixedFont">{Object}</span>  <b>events</b>
+
+							</dt>
+								<dd>Events to bind to to this ImpelPeer object. Currently no Events are fired by this class</dd>
+
+						</dl>
+
+
+
+
+
+
+
+
+			</div>
+
+
+<!-- ============================== field details ========================== -->
+
+
+<!-- ============================== method details ========================= -->
+
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+
+					<a name="addSelectColumns"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{<a href="../symbols/Criteria.html">Criteria</a>}</span>
+					<b>addSelectColumns</b>(<span class="param">crit</span>)
+
+					</div>
+					<div class="description">
+						Add the select columns, that are necessary to hydrate the associated ImpelClass object from a database row, to a Criteria object
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> <b>crit</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The Criteria object that will be used to retrieve rows from the database</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> If a Criteria object is not passed in one will be created and returned. If a Criteria object is passed in that
+it will be modified and returned, but because JavaScript passes object by reference you do not need to assign the return back to your
+Criteria object.</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/Criteria.html#addSelectColumn">Criteria#addSelectColumn</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="addTable"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{<a href="../symbols/Criteria.html">Criteria</a>}</span>
+					<b>addTable</b>(<span class="param">crit</span>)
+
+					</div>
+					<div class="description">
+						Add the table, in which this ImpelClass's data is stored in the database, to a Criteria object
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> <b>crit</b>
+
+								</dt>
+								<dd>- The Criteria object that will be used to retrieve rows from the database</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> If a Criteria object is not passed in one will be created and returned. If a Criteria object is passed in that
+it will be modified and returned, but because JavaScript passes object by reference you do not need to assign the return back to your
+Criteria object.</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/Criteria.html#addTable">Criteria#addTable</a></dd>
+
+								<dd><a href="../symbols/ImpelPeer.html#getTableName">ImpelPeer#getTableName</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="doSelect"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>doSelect</b>(<span class="param">criteria</span>, <span class="param">callback(ImpelClass)</span>, <span class="param">con</span>)
+
+					</div>
+					<div class="description">
+						Retrieve a set of rows from the database and attempt to hydrate instances of this ImpelPeer's associated ImpelClass with the results.
+It is important to realize that doSelect and doSelectOne will only retrieve objects that are an instance of this ImpelPeer's
+ImpelClass. One-to-many and many-to-many relationships will not be maintaned. Use doSelectJoinAll or a similar function if
+this ImpelClass's objects are actually made up of multiple other ImpelClasses.
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> <b>criteria</b>
+
+								</dt>
+								<dd>- The criteria used to limit the results retrieved. The appropriate table and columns will be added
+                           to the Criteria object automatically, so you only need to specify the pieces of the WHERE clause.
+                           It can also be an empty criteria, so doSelect(new Criteria(), ...) is fine if you want to retireve
+                           all of the associated objects from the database.</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback(ImpelClass)</b>
+
+								</dt>
+								<dd>- The function to call when the query completes.</dd>
+
+								<dt>
+									<span class="light fixedFont">{connection}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The database connection to use. Impel.db will be used if it is undefined.</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the ImpelClass objects that are retreived, pass in a callback function</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelPeer.html#doSelectOne">ImpelPeer#doSelectOne</a></dd>
+
+								<dd><a href="../symbols/ImpelPeer.html#doSelectJoinAll">ImpelPeer#doSelectJoinAll</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="doSelectJoinAll"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>doSelectJoinAll</b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">con</span>, <span class="param">except</span>)
+
+					</div>
+					<div class="description">
+						Retrieve objets of the ImpelClass that are associated with this ImpelPeer, but also retieve all the other ImpelClass objects that
+are associated with each object for this ImpelPeer.
+
+
+					</div>
+
+
+
+					<pre class="code brush: js;">var c = new Criteria();
+ c.add("CardPeer::id",119);
+CardPeer.doSelectJoinAllExcept(c,function(cards){ ... }, null, ['CardScore','Stack']);</pre>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> <b>criteria</b>
+
+								</dt>
+								<dd>- The criteria used to limit the results retrieved. The appropriate table and columns will be added
+                           to the Criteria object automatically, so you only need to specify the pieces of the WHERE clause.
+                           It can also be an empty criteria, so doSelect(new Criteria(), ...) is fine if you want to retireve
+                           all of the associated objects from the database.</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback(object)</b>
+
+								</dt>
+								<dd>- The function to call when the query completes.</dd>
+
+								<dt>
+									<span class="light fixedFont">{connection}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The database connection to use. Impel.db will be used if it is undefined.</dd>
+
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>except</b>
+
+								</dt>
+								<dd>- Do not JOIN with the peers in this array</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the ImpelClass objects that are retreived, pass in a callback function.</dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="doSelectJoinAllExcept"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>doSelectJoinAllExcept</b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">except</span>, <span class="param">con</span>)
+
+					</div>
+					<div class="description">
+						Retrieve objets of the ImpelClass that are associated with this ImpelPeer, but also retieve all the other ImpelClass objects that
+are associated with each object for this ImpelPeer.
+
+
+					</div>
+
+
+
+					<pre class="code brush: js;">var c = new Criteria();
+ c.add("CardPeer::id",119);
+CardPeer.doSelectJoinAllExcept(c,function(cards){ ... }, ['CardScore','Stack']);</pre>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> <b>criteria</b>
+
+								</dt>
+								<dd>- The criteria used to limit the results retrieved. The appropriate table and columns will be added
+                           to the Criteria object automatically, so you only need to specify the pieces of the WHERE clause.
+                           It can also be an empty criteria, so doSelect(new Criteria(), ...) is fine if you want to retireve
+                           all of the associated objects from the database.</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback(object)</b>
+
+								</dt>
+								<dd>- The function to call when the query completes.</dd>
+
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>except</b>
+
+								</dt>
+								<dd>- Do not JOIN with the peers in this array</dd>
+
+								<dt>
+									<span class="light fixedFont">{connection}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The database connection to use. Impel.db will be used if it is undefined.</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the ImpelClass objects that are retreived, pass in a callback function.</dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="doSelectOne"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>doSelectOne</b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">con</span>)
+
+					</div>
+					<div class="description">
+						Retrieve a sing row from the database and attempt to hydrate an instance of this ImpelPeer's associated ImpelClass with the result.
+It is important to realize that doSelect and doSelectOne will only retrieve objects that are an instance of this ImpelPeer's
+ImpelClass. One-to-many and many-to-many relationships will not be maintaned. Use doSelectJoinAll or a similar function if
+this ImpelClass's objects are actually made up of multiple other ImpelClasses.
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> <b>criteria</b>
+
+								</dt>
+								<dd>- The criteria used to limit the results retrieved. The appropriate table and columns will be added
+                           to the Criteria object automatically, so you only need to specify the pieces of the WHERE clause.
+                           It can also be an empty criteria, so doSelect(new Criteria(), ...) is fine if you want to retireve
+                           all of the associated objects from the database.</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback(object)</b>
+
+								</dt>
+								<dd>- The function to call when the query completes.</dd>
+
+								<dt>
+									<span class="light fixedFont">{connection}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The database connection to use. Impel.db will be used if it is undefined.</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the ImpelClass objects that are retreived, pass in a callback function</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelPeer.html#doSelect">ImpelPeer#doSelect</a></dd>
+
+								<dd><a href="../symbols/ImpelPeer.html#doSelectJoinAll">ImpelPeer#doSelectJoinAll</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="doSelectOneJoinAll"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>doSelectOneJoinAll</b>(<span class="param">criteria</span>, <span class="param">callback(object)</span>, <span class="param">con</span>, <span class="param">except</span>)
+
+					</div>
+					<div class="description">
+						Retrieve a single object from the database, but include all of its associated objects.
+<p><strong>Important Note</strong> This method can be incredibly memory intensive if you have a lot of rows in the database. Make sure to pass in a good Criteria</p>
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Criteria.html">Criteria</a>}</span> <b>criteria</b>
+
+								</dt>
+								<dd>- The criteria used to limit the results retrieved. The appropriate table and columns will be added
+                           to the Criteria object automatically, so you only need to specify the pieces of the WHERE clause.
+                           It can also be an empty criteria, so doSelect(new Criteria(), ...) is fine if you want to retireve
+                           all of the associated objects from the database.</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback(object)</b>
+
+								</dt>
+								<dd>- The function to call when the query completes.</dd>
+
+								<dt>
+									<span class="light fixedFont">{connection}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The database connection to use. Impel.db will be used if it is undefined.</dd>
+
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>except</b>
+
+								</dt>
+								<dd>- Do not JOIN with the peers in this array</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the ImpelClass object that is retreived, pass in a callback function.</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelPeer.html#retrieveByPkIdJoinAll">ImpelPeer#retrieveByPkIdJoinAll</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="executeSQL"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>executeSQL</b>(<span class="param">stmt</span>, <span class="param">values</span>, <span class="param">s_callback(SQLResultSet)</span>, <span class="param">f_callback(Error)</span>, <span class="param">obj</span>, <span class="param">obj_method</span>, <span class="param">con</span>)
+
+					</div>
+					<div class="description">
+						Execute an arbitrary SQL statement against the database.
+If the query is succesfull call a particular method of a particular object. Also call specified
+success and failure callbacks as necessary.
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>stmt</b>
+
+								</dt>
+								<dd>The SQL statement to execute</dd>
+
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>values</b>
+									<i>Optional</i>
+								</dt>
+								<dd>A set of values to to insert into the SQL statement after properly perparing them</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>s_callback(SQLResultSet)</b>
+									<i>Optional</i>
+								</dt>
+								<dd>The function to call if the transaction succeeds</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>f_callback(Error)</b>
+									<i>Optional</i>
+								</dt>
+								<dd>The function to call if the transaction fails</dd>
+
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>obj</b>
+
+								</dt>
+								<dd>The object that is being affected by this transaction</dd>
+
+								<dt>
+									<span class="light fixedFont">{method}</span> <b>obj_method</b>
+
+								</dt>
+								<dd>The method in the object to call after the transaction succeeds</dd>
+
+								<dt>
+									<span class="light fixedFont">{database}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>The database to execute against. If null then Impel.db is used
+
+<p>On success s_callback will be called with an SQLResultSet as an arument. An SQLResultSet contains:</p>
+  <ul>
+    <li>int insertId: -1 if not insert was performed</li>
+    <li>int rowsAffected: 0 if no rows were updated or inserted</li>
+    <li>SQLResultSetRowList rows: the rows that were returned
+        <ul>
+          <li>int length</li>
+          <li>function item(index): retrieve the row at a given relative index</li>
+        </ul>
+    </li>
+  </ul></dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the data retrieved pass in a callback function, or an Object and a method to call.</dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="generateAttributes"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>generateAttributes</b>()
+
+					</div>
+					<div class="description">
+						Dynamically build the attributes of the ImpelClass object associated with this ImpelPeer object based on the columns that were specified when instantiating this object.
+It may at some point be worth while to write this into a code generator, so that it only needs to be called during development. Of course that would increase the size
+of the code delivered to the user, so it is a network bandwidth v.s. CPU utilization issue.
+
+<ul>
+  <lh><strong>Important Notes:</strong></lh>
+  <li>The ImpelClass must be defined within the scope of window</li>
+  <li>This method should not be called directly because the constructor will call it. If you add columns to the peer after instantiation THEN call this method manually.</li>
+</ul>
+
+
+					</div>
+
+
+
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> The ImpelClass class definition that is associated with this ImpelPeer instnace will be modified to include new attributes</dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="generateDocs"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>generateDocs</b>()
+
+					</div>
+					<div class="description">
+						Generate a documentation page for this object detailing all of it's doSelectJoin* methods, which are automatically generated.
+<p><strong>Important Note:</strong> The documentation does include the method definitons, but they cannot be copied verbatim
+into your code and substituted for the actual automatically generated methods. </p>
+
+
+					</div>
+
+
+
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> A jsdoc-toolkit formatted string of declarations
+
+<pre class="code brush: js;">
+/&#x2a;&#x2a;
+ * Retrieve objects from the database including their associated Compound m-m
+ * objects using CardCompound as an intermediary.
+ * @param   {Criteria} criteria The Criteria object to use to construct and limit
+ *                              the query.
+ * @param   {function} callback(Objects[]) The function to pass the results to
+ * @param   {Database} [con] The database connection to use.
+ * @returns {undefined} The callback function will be used to pass the results back
+ &#x2a;/
+doSelectJoinCompoundThroughCardCompound : function (criteria, callback, con) {
+    var c = this.addTable(this.addSelectColumns( criteria));
+        c = peer_column.peer.addTable(peer_column.peer.addSelectColumns(c));
+        c = through_peer_column.peer.addTable(c);
+        c.addJoin(this.options.base_object+"Peer::id", through_peer_column.peer_name + "::" + through_peer_column.column, CritConstants.LEFT_JOIN);
+        c.addJoin(peer_column.peer_name + "::" + peer_column.column, through_peer_column_relation.peer_name + "::" + through_peer_column_relation.column);
+
+    this.executeSQL(c.getSelectSQL(),c.getValues(),
+          function(rs){
+            var objs   = $H({});
+            new ResultSet(rs).toArray().each(function(row){
+                var obj     = new window[this.options.base_object]();
+                var robj    = new window[peer_column.peer.options.base_object]();
+                    obj.hydrate(row);
+
+                var id      = obj.getId();
+                    objs.include(id,obj);
+                    obj         = null;
+                    obj         = objs.get(id);
+
+                robj.hydrate(row);
+                obj[adder](robj);
+             },this);
+           callback(objs);
+        }.bind(this),
+        function(e){
+           throw("Query failed: "+e);
+        }
+    );
+}
+</pre></dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelClass.html#generateDocs">ImpelClass#generateDocs</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="generateMethods"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>generateMethods</b>()
+
+					</div>
+					<div class="description">
+						Dynamically build the set/get methods of the ImpelClass object associated with this ImpelPeer object based on the columns that were specified when instantiating this object.
+It may at some point be worth while to write this into a code generator, so that it only needs to be called during development. Of course that would increase the size
+of the code delivered to the user, so it is a network bandwidth v.s. CPU utilization issue.
+<ul>
+  <lh><strong>Important Notes:</strong></lh>
+  <li>The ImpelClass must be defined within the scope of window</li>
+  <li>This method should not be called directly because the constructor will call it. If you add columns to the peer after instantiation THEN call this method manually.</li>
+</ul>
+
+
+					</div>
+
+
+
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> The ImpelClass class definition that is associated with this ImpelPeer instance will be modified to include new methods</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelClass.html#generateDocs">ImpelClass#generateDocs</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="getBaseObjName"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getBaseObjName</b>()
+
+					</div>
+					<div class="description">
+						Retrieve the name of the class associated with this peer object.
+
+
+					</div>
+
+
+
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> The name of the class associated with this peer object, e.g., CardPeer.getBaseObjName() will return "Card"</dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="getColumns"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{Object}</span>
+					<b>getColumns</b>(<span class="param">columns</span>)
+
+					</div>
+					<div class="description">
+						Retrieve an internal object that defines the names of the attributes and columns for this ImpelPeer's associated ImpelClass.
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<b>columns</b>
+
+								</dt>
+								<dd></dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{Object}</span> An object representing the attributes and columns for this ImpelPeer
+<pre class="code brush: js;">
+{
+  'id'          : 'player.id',
+  'name'        : 'player.name',
+  'created_at'  : 'player.created_at',
+  'updated_at'  : 'player.updated_at'
+}
+</pre></dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="getSelectColumns"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getSelectColumns</b>()
+
+					</div>
+					<div class="description">
+						Retrieve a comma separated list of the columns that will be used to create an SQL SELECT statement for this ImpelPeer.
+<p><em>Important Note:</em> The columns will be specified using AS clauses because the HTML 5, or SQLite, RDBMS
+impelementation will overwrite columns with the same name from separate tables.</p>
+
+
+					</div>
+
+
+
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> </dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="getTableName"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{<a href="../symbols/String.html">String</a>}</span>
+					<b>getTableName</b>()
+
+					</div>
+					<div class="description">
+						Retrieve the name of the table that is associate with this ImpelPeer.
+
+
+					</div>
+
+
+
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> </dd>
+
+							</dl>
+
+
+
+
+					<hr />
+
+					<a name="hasMany"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>hasMany</b>(<span class="param">peer_column</span>)
+
+					</div>
+					<div class="description">
+						Define an one-to-many relationship between this ImpelPeer and another.
+<p>This ImpelPeer will be modified to include methods to select its associated ImpelClass objects from the database along with the the related
+    ImpelClass specified by the peer_column argument. This ImpelPeer's associated ImpelClass will also be modified to include methods for holding
+    the related objects.</p>
+<p>Any calls to save an ImpelClass that uses this ImpelPeer will also save any of the related objects that it has a one-to-many relationship with</p>
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>peer_column</b>
+
+								</dt>
+								<dd>The Peer::column that relates the two ImpelPeers.</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> This ImpelPeer will be modified to include new methods as will the prototype for the associated ImpelClass
+<h3>Example</h3>
+<pre class="code brush: js;">
+  CardTablePeer.hasMany("PlayerPeer::card_table_id");
+</pre>
+
+<h4>This ImpelPeer (CardTablePeer) now includes the following method</h4>
+<pre class="code brush: js;">
+  CardTablePeer.doSelectJoinPlayer(criteria,s_callback,con);
+</pre>
+
+<h4>The related ImpelClass (CardTable) now includes the following methods</h4>
+<pre class="code brush: js;">
+  CardTable.addPlayer(player);
+  CardTable.getPlayers();
+</pre></dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelClass.html#generateDocs">ImpelClass#generateDocs</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="hasManyThrough"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>hasManyThrough</b>(<span class="param">peer_column</span>, <span class="param">through_peer_column</span>, <span class="param">through_peer_column_relation</span>)
+
+					</div>
+					<div class="description">
+						Define a many-to-many relationship between this ImpelPeer and another via a third ImpelPeer.
+<p>This ImpelPeer will be modified to include methods to select its associated ImpelClass objects from the database along with the the related
+   ImpelClass specified by the peer_column argument. This ImpelPeer's associated ImpelClass will also be modified to include methods for holding
+   the related objects.</p>
+<p>Any calls to save an ImpelClass that uses this ImpelPeer will also save any of the related objects that it has a many-to-many relationship with.
+   The save call will also keep the association up to date via the third ImpelPeer</p>
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>peer_column</b>
+
+								</dt>
+								<dd>The Peer::column that this ImpelPeer has a many-to-many relationship with.</dd>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>through_peer_column</b>
+
+								</dt>
+								<dd>The Peer::column that associates this Peer with the third Peer</dd>
+
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/String.html">String</a>}</span> <b>through_peer_column_relation</b>
+
+								</dt>
+								<dd>The peer::column that associates the related Peer with the third Peer</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> This ImpelPeer will be modified to include new methods as will the prototype for the associated ImpelClass
+<h3>Example</h3>
+<pre class="code brush: js;">
+  CardPeer.hasManyThrough("StackPeer::id", "CardStackPeer::card_id", "CardStackPeer::stack_id");
+</pre>
+
+<h4>The ImpelPeer (CardPeer) now includes the following method</h4>
+<pre class="code brush: js;">
+  CardPeer.doSelectJoinStackThroughCardStack(criteria,s_callback,con);
+</pre>
+
+<h4>The related ImpelClass (CardTable) now includes the following methods</h4>
+<pre class="code brush: js;">
+  Card.addStack(stack);
+  Card.getStacks();
+</pre>
+
+<p>The Card.doSelectJoinAll method will take the many-to-many relationship between CardPeer and StackPeer into account; as will the Card.save() method.</p>
+<br />
+<p>Currently, you must manually specify both sides of the many-to-many relationship, so in our example we need to call StackPeer.hasManyThrough as well.</p>
+<pre class="code brush: js;">
+  StackPeer.hasManyThrough("CardPeer::id", "CardStackPeer::stack_id", "CardStackPeer::card_id");
+</pre>
+
+<h4>The ImpelPeer (StackPeer) now includes the following method</h4>
+<pre class="code brush: js;">
+  StackPeer.doSelectJoinStackThroughCardStack(criteria,s_callback,con);
+</pre>
+
+<h4>The related ImpelClass (Stack) now includes the following methods</h4>
+<pre class="code brush: js;">
+  Stack.addCard(card);
+  Stack.getCards();
+</pre></dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelClass.html#generateDocs">ImpelClass#generateDocs</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="isDeleting"> </a>
+					<div class="fixedFont">
+
+
+					<b>isDeleting</b>(<span class="param">id</span>)
+
+					</div>
+					<div class="description">
+						Determine if Impel is currently deleting an ImpelClass with a specific id.
+<p>This method is used by Impel to prevent certain race-conditions. It can be used externally, but there should be no need.</p>
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>id</b>
+
+								</dt>
+								<dd>The id of the ImpelClass object to check.</dd>
+
+							</dl>
+
+
+
+
+
+
+
+
+					<hr />
+
+					<a name="retrieveByPkId"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>retrieveByPkId</b>(<span class="param">id</span>, <span class="param">callback(object)</span>, <span class="param">con</span>)
+
+					</div>
+					<div class="description">
+						Retrieve a single object from the database based on its primary key (id).
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>id</b>
+
+								</dt>
+								<dd>- The value of the id for the object that you want to retrieve</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback(object)</b>
+
+								</dt>
+								<dd>- The function to call when the query completes.</dd>
+
+								<dt>
+									<span class="light fixedFont">{connection}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The database connection to use. Impel.db will be used if it is undefined.</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the ImpelClass object that is retreived, pass in a callback function.</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelPeer.html#doSelectOne">ImpelPeer#doSelectOne</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="retrieveByPkIdJoinAll"> </a>
+					<div class="fixedFont">
+
+					<span class="light">{undefined}</span>
+					<b>retrieveByPkIdJoinAll</b>(<span class="param">id</span>, <span class="param">callback(object)</span>, <span class="param">con</span>, <span class="param">except</span>)
+
+					</div>
+					<div class="description">
+						Retrieve a single object from the database based on its primary key (id), but also retrieve its associated objects.
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>id</b>
+
+								</dt>
+								<dd>- The value of the id for the object that you want to retrieve</dd>
+
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback(object)</b>
+
+								</dt>
+								<dd>- The function to call when the query completes.</dd>
+
+								<dt>
+									<span class="light fixedFont">{connection}</span> <b>con</b>
+									<i>Optional</i>
+								</dt>
+								<dd>- The database connection to use. Impel.db will be used if it is undefined.</dd>
+
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>except</b>
+
+								</dt>
+								<dd>- Do not JOIN with the peers in this array</dd>
+
+							</dl>
+
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+
+								<dd><span class="light fixedFont">{undefined}</span> To access the ImpelClass object that is retreived, pass in a callback function.</dd>
+
+							</dl>
+
+
+
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+
+								<dd><a href="../symbols/ImpelPeer.html#doSelectOneJoinAll">ImpelPeer#doSelectOneJoinAll</a></dd>
+
+							</dl>
+
+
+					<hr />
+
+					<a name="setDeleted"> </a>
+					<div class="fixedFont">
+
+
+					<b>setDeleted</b>(<span class="param">id</span>)
+
+					</div>
+					<div class="description">
+						Record that an ImpelClass object has been deleted.
+<p>This method is used by Impel to prevent certain race-conditions. It can be used externally, but there should be no need.</p>
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>id</b>
+
+								</dt>
+								<dd>The id of the ImpelClass object</dd>
+
+							</dl>
+
+
+
+
+
+
+
+
+					<hr />
+
+					<a name="setDeleting"> </a>
+					<div class="fixedFont">
+
+
+					<b>setDeleting</b>(<span class="param">id</span>)
+
+					</div>
+					<div class="description">
+						Record that an ImpelClass object is being deleted.
+<p>This method is used by Impel to prevent certain race-conditions. It can be used externally, but there should be no need.</p>
+
+
+					</div>
+
+
+
+
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>id</b>
+
+								</dt>
+								<dd>The id of the ImpelClass object</dd>
+
+							</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================== event details ========================= -->
+
+
+			<hr />
+		</div>
+
+            <div class="push">&nbsp;</div>
+         </div> <!-- end of wrapper -->
+         <div id="footer"
+        	<div class="fineprint" style="clear:both">
+        	    <a class="logo" href="http://www.simulacre.org/"> </a>
+        	</div>
+    	</div>
+    	<script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-1727701-7");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
+	</body>
+</html>

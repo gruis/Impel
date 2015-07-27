@@ -1,0 +1,15 @@
+.form-row{ zoom:1; }
+.clear{ zoom:1; }
+#widgets{ zoom:1;}
+#api {
+  position:relative;
+}
+#api #index
+{
+	position: absolute;
+	left:-10px;
+}
+
+#wrapper .widget .inner p{
+  font-size:8.5pt;
+}
